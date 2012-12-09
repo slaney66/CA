@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	    <script>
+            $("#one").live('pageinit', function(event) {
+                $(".ui-collapsible[data-allow-collapse=false]").unbind("expand collapse");
+            });
+        </script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+
+<body> 
+<!-- Start of page one-->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>Locate My Health</h1>
+	</div><!-- /header one -->
+
+	<div data-role="content">	
+		<p>I'm the home page.</p>		
+		<a href="#two" data-role="button" data-inline="true" data-theme="b"> Pharmacies</a>
+		<a href="#three" data-role="button" data-inline="true" data-theme="b">Medical Centres</a>
+		<a href="#four" data-role="button" data-inline="true" data-theme="b">Maps</a>
+		<a href="#five" data-role="button" data-inline="true" data-theme="b">Transport</a>
+		<p>Welcome to the Locate My Health app.
+
+This app was designed to help you find the nearest pharmacy or medical centre in your area
+
+Just enter your location and Locate My Health will do the work and send you where you should go
+
+</br> It'll even map the location for you....</p> </div>
+	<div><!-- /content one -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer one -->
+</div><!-- /end page one-->
+
+
+<!-- Start of page two -->
+<div data-role="page" id="two">
+
+	<div data-role="header">
+		<h1>Pharmacies</h1>
+	</div><!-- /header two -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#one">Back to Home</a></p>	
+	</div><!-- /content two -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer two -->
+</div><!-- /end page two -->
+
+<!-- Start of page three -->
+<div data-role="page" id="three">
+
+	<div data-role="header">
+		<h1>Medical Centres</h1>
+	</div><!-- /header three -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#one">Back to Home</a></p>	
+	</div><!-- /content three -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer three -->
+</div><!-- /end page three -->
+
+<!-- Start of page four -->
+<div data-role="page" id="four">
+
+	<div data-role="header">
+		<h1>Map</h1>
+	</div><!-- /header four -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#one">Back to Home</a></p>	
+	</div><!-- /content four -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer four -->
+</div><!-- /end page four -->
+
+<!-- Start of page five -->
+<div data-role="page" id="five">
+
+	<div data-role="header">
+		<h1>Transport</h1>
+	</div><!-- /header five -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#one">Back to Home</a></p>	
+	</div><!-- /content five -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer five -->
+</div><!-- /end page five -->
+
+</body>
+
+</html>
